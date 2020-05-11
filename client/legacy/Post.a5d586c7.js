@@ -1,1 +1,18 @@
-var t=function(){var t=arguments.length>0&&void 0!==arguments[0]?arguments[0]:"",e=arguments.length>1&&void 0!==arguments[1]?arguments[1]:"",i=arguments.length>2&&void 0!==arguments[2]?arguments[2]:"",d=arguments.length>3&&void 0!==arguments[3]?arguments[3]:[],g=arguments.length>4&&void 0!==arguments[4]?arguments[4]:"/successkid.jpg",n=arguments.length>5&&void 0!==arguments[5]?arguments[5]:"";return{id:t,title:e,desc:i,img:g,tags:d,body:n}};export{t as P};
+var Post = (function () {
+  var id = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : "";
+  var title = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : "";
+  var desc = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : "";
+  var tags = arguments.length > 3 && arguments[3] !== undefined ? arguments[3] : [];
+  var img = arguments.length > 4 && arguments[4] !== undefined ? arguments[4] : "/successkid.jpg";
+  var body = arguments.length > 5 && arguments[5] !== undefined ? arguments[5] : "";
+  return {
+    id: id,
+    title: title,
+    desc: desc,
+    img: img,
+    tags: tags,
+    body: body
+  };
+});
+
+export { Post as P };
