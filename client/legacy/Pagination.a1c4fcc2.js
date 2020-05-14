@@ -1,5 +1,4 @@
-import { _ as _inherits, a as _getPrototypeOf, b as _possibleConstructorReturn, c as _classCallCheck, i as init, s as safe_not_equal, d as _assertThisInitialized, e as dispatch_dev, f as _createClass, S as SvelteComponentDev, v as validate_each_argument, g as createEventDispatcher, h as validate_slots, j as element, k as claim_element, l as attr_dev, m as add_location, n as insert_dev, o as listen_dev, p as detach_dev, t as text, q as children, r as claim_text, u as append_dev, w as set_data_dev, x as space, y as claim_space, z as _slicedToArray, A as noop, B as destroy_each, C as bubble, D as create_component, E as claim_component, F as mount_component, G as transition_in, H as transition_out, I as destroy_component, J as group_outros, K as check_outros, L as create_slot, M as null_to_empty, N as get_slot_context, O as get_slot_changes, P as prop_dev, Q as validate_store, R as component_subscribe, T as onMount, U as goto, V as paginationStore, W as LoadingOverlay, X as globals, Y as empty, Z as query_selector_all, $ as _asyncToGenerator, a0 as regenerator } from './client.a70cd07f.js';
-import { P as Post } from './Post.a5d586c7.js';
+import { _ as _inherits, a as _getPrototypeOf, b as _possibleConstructorReturn, c as _classCallCheck, i as init, s as safe_not_equal, d as _assertThisInitialized, e as dispatch_dev, f as _createClass, S as SvelteComponentDev, v as validate_each_argument, V as createEventDispatcher, g as validate_slots, h as element, j as claim_element, n as attr_dev, o as add_location, p as insert_dev, x as listen_dev, m as detach_dev, t as text, k as children, l as claim_text, q as append_dev, r as set_data_dev, u as space, w as claim_space, y as _slicedToArray, z as noop, A as destroy_each, B as bubble, H as create_component, I as claim_component, J as mount_component, K as transition_in, M as transition_out, N as destroy_component, Q as group_outros, R as check_outros, W as create_slot, X as null_to_empty, Y as get_slot_context, Z as get_slot_changes, $ as prop_dev } from './client.8bd9bda1.js';
 
 function _createSuper(Derived) { var hasNativeReflectConstruct = _isNativeReflectConstruct(); return function () { var Super = _getPrototypeOf(Derived), result; if (hasNativeReflectConstruct) { var NewTarget = _getPrototypeOf(this).constructor; result = Reflect.construct(Super, arguments, NewTarget); } else { result = Super.apply(this, arguments); } return _possibleConstructorReturn(this, result); }; }
 
@@ -547,8 +546,8 @@ function create_fragment$1(ctx) {
       this.h();
     },
     h: function hydrate() {
-      attr_dev(section, "class", "flex flex-wrap -m-4");
-      add_location(section, file$1, 14, 0, 391);
+      attr_dev(section, "class", "flex flex-wrap");
+      add_location(section, file$1, 14, 0, 396);
     },
     m: function mount(target, anchor) {
       insert_dev(target, section, anchor);
@@ -634,7 +633,8 @@ function create_fragment$1(ctx) {
 }
 
 function instance$1($$self, $$props, $$invalidate) {
-  var posts = $$props.posts;
+  var _$$props$posts = $$props.posts,
+      posts = _$$props$posts === void 0 ? [] : _$$props$posts;
   var dispatch = createEventDispatcher();
   var writable_props = ["posts"];
   Object.keys($$props).forEach(function (key) {
@@ -693,15 +693,6 @@ var PostsGrid = /*#__PURE__*/function (_SvelteComponentDev) {
       options: options,
       id: create_fragment$1.name
     });
-    var ctx = _this.$$.ctx;
-    var props = options.props || {};
-
-    if (
-    /*posts*/
-    ctx[0] === undefined && !("posts" in props)) {
-      console.warn("<PostsGrid> was created without expected prop 'posts'");
-    }
-
     return _this;
   }
 
@@ -721,7 +712,7 @@ var PostsGrid = /*#__PURE__*/function (_SvelteComponentDev) {
 function _createSuper$2(Derived) { var hasNativeReflectConstruct = _isNativeReflectConstruct$2(); return function () { var Super = _getPrototypeOf(Derived), result; if (hasNativeReflectConstruct) { var NewTarget = _getPrototypeOf(this).constructor; result = Reflect.construct(Super, arguments, NewTarget); } else { result = Super.apply(this, arguments); } return _possibleConstructorReturn(this, result); }; }
 
 function _isNativeReflectConstruct$2() { if (typeof Reflect === "undefined" || !Reflect.construct) return false; if (Reflect.construct.sham) return false; if (typeof Proxy === "function") return true; try { Date.prototype.toString.call(Reflect.construct(Date, [], function () {})); return true; } catch (e) { return false; } }
-var file$2 = "src\\components\\Button.svelte"; // (19:8) lorem
+var file$2 = "src\\components\\Button.svelte"; // (21:8) lorem
 
 function fallback_block(ctx) {
   var t;
@@ -743,7 +734,7 @@ function fallback_block(ctx) {
     block: block,
     id: fallback_block.name,
     type: "fallback",
-    source: "(19:8) lorem",
+    source: "(21:8) lorem",
     ctx: ctx
   });
   return block;
@@ -783,8 +774,8 @@ function create_fragment$2(ctx) {
       ctx[1];
       attr_dev(button, "class", button_class_value = "" + (null_to_empty("w-auto border-none bg-primary-500 hover:bg-primary-700 px-6 py-2 text-white transition duration-300 ease-in-out" + " " +
       /*className*/
-      ctx[0]) + " svelte-1vwbqcr"));
-      add_location(button, file$2, 14, 0, 685);
+      ctx[0]) + " svelte-1xbzcz8"));
+      add_location(button, file$2, 16, 0, 780);
     },
     m: function mount(target, anchor, remount) {
       insert_dev(target, button, anchor);
@@ -827,7 +818,7 @@ function create_fragment$2(ctx) {
       /*className*/
       1 && button_class_value !== (button_class_value = "" + (null_to_empty("w-auto border-none bg-primary-500 hover:bg-primary-700 px-6 py-2 text-white transition duration-300 ease-in-out" + " " +
       /*className*/
-      ctx[0]) + " svelte-1vwbqcr"))) {
+      ctx[0]) + " svelte-1xbzcz8"))) {
         attr_dev(button, "class", button_class_value);
       }
     },
@@ -1086,7 +1077,7 @@ function create_fragment$3(ctx) {
     h: function hydrate() {
       attr_dev(span, "class", "w-auto border-none bg-primary-400 px-6 py-2 text-white text-lg");
       add_location(span, file$3, 21, 2, 586);
-      attr_dev(section, "class", "flex justify-center items-center mt-8 ");
+      attr_dev(section, "class", "flex justify-center items-center my-8 ");
       add_location(section, file$3, 14, 0, 395);
     },
     m: function mount(target, anchor) {
@@ -1246,375 +1237,4 @@ var Pagination = /*#__PURE__*/function (_SvelteComponentDev) {
   return Pagination;
 }(SvelteComponentDev);
 
-function _createSuper$4(Derived) { var hasNativeReflectConstruct = _isNativeReflectConstruct$4(); return function () { var Super = _getPrototypeOf(Derived), result; if (hasNativeReflectConstruct) { var NewTarget = _getPrototypeOf(this).constructor; result = Reflect.construct(Super, arguments, NewTarget); } else { result = Super.apply(this, arguments); } return _possibleConstructorReturn(this, result); }; }
-
-function _isNativeReflectConstruct$4() { if (typeof Reflect === "undefined" || !Reflect.construct) return false; if (Reflect.construct.sham) return false; if (typeof Proxy === "function") return true; try { Date.prototype.toString.call(Reflect.construct(Date, [], function () {})); return true; } catch (e) { return false; } }
-var console_1 = globals.console;
-
-function create_if_block$1(ctx) {
-  var current;
-  var loadingoverlay = new LoadingOverlay({
-    $$inline: true
-  });
-  var block = {
-    c: function create() {
-      create_component(loadingoverlay.$$.fragment);
-    },
-    l: function claim(nodes) {
-      claim_component(loadingoverlay.$$.fragment, nodes);
-    },
-    m: function mount(target, anchor) {
-      mount_component(loadingoverlay, target, anchor);
-      current = true;
-    },
-    i: function intro(local) {
-      if (current) return;
-      transition_in(loadingoverlay.$$.fragment, local);
-      current = true;
-    },
-    o: function outro(local) {
-      transition_out(loadingoverlay.$$.fragment, local);
-      current = false;
-    },
-    d: function destroy(detaching) {
-      destroy_component(loadingoverlay, detaching);
-    }
-  };
-  dispatch_dev("SvelteRegisterBlock", {
-    block: block,
-    id: create_if_block$1.name,
-    type: "if",
-    source: "(71:0) {#if isFetching}",
-    ctx: ctx
-  });
-  return block;
-}
-
-function create_fragment$4(ctx) {
-  var t0;
-  var t1;
-  var t2;
-  var if_block_anchor;
-  var current;
-  var postsgrid = new PostsGrid({
-    props: {
-      posts:
-      /*posts*/
-      ctx[0]
-    },
-    $$inline: true
-  });
-  postsgrid.$on("getpost",
-  /*getpost_handler*/
-  ctx[8]);
-  var pagination = new Pagination({
-    props: {
-      pageCount:
-      /*$paginationStore*/
-      ctx[2]
-    },
-    $$inline: true
-  });
-  pagination.$on("prev",
-  /*prevPage*/
-  ctx[5]);
-  pagination.$on("next",
-  /*nextPage*/
-  ctx[4]);
-  var if_block =
-  /*isFetching*/
-  ctx[1] && create_if_block$1(ctx);
-  var block = {
-    c: function create() {
-      t0 = space();
-      create_component(postsgrid.$$.fragment);
-      t1 = space();
-      create_component(pagination.$$.fragment);
-      t2 = space();
-      if (if_block) if_block.c();
-      if_block_anchor = empty();
-      this.h();
-    },
-    l: function claim(nodes) {
-      var head_nodes = query_selector_all("[data-svelte=\"svelte-yzlqez\"]", document.head);
-      head_nodes.forEach(detach_dev);
-      t0 = claim_space(nodes);
-      claim_component(postsgrid.$$.fragment, nodes);
-      t1 = claim_space(nodes);
-      claim_component(pagination.$$.fragment, nodes);
-      t2 = claim_space(nodes);
-      if (if_block) if_block.l(nodes);
-      if_block_anchor = empty();
-      this.h();
-    },
-    h: function hydrate() {
-      document.title = "WAB - WorkAttack Blog";
-    },
-    m: function mount(target, anchor) {
-      insert_dev(target, t0, anchor);
-      mount_component(postsgrid, target, anchor);
-      insert_dev(target, t1, anchor);
-      mount_component(pagination, target, anchor);
-      insert_dev(target, t2, anchor);
-      if (if_block) if_block.m(target, anchor);
-      insert_dev(target, if_block_anchor, anchor);
-      current = true;
-    },
-    p: function update(ctx, _ref) {
-      var _ref2 = _slicedToArray(_ref, 1),
-          dirty = _ref2[0];
-
-      var postsgrid_changes = {};
-      if (dirty &
-      /*posts*/
-      1) postsgrid_changes.posts =
-      /*posts*/
-      ctx[0];
-      postsgrid.$set(postsgrid_changes);
-      var pagination_changes = {};
-      if (dirty &
-      /*$paginationStore*/
-      4) pagination_changes.pageCount =
-      /*$paginationStore*/
-      ctx[2];
-      pagination.$set(pagination_changes);
-
-      if (
-      /*isFetching*/
-      ctx[1]) {
-        if (if_block) {
-          if (dirty &
-          /*isFetching*/
-          2) {
-            transition_in(if_block, 1);
-          }
-        } else {
-          if_block = create_if_block$1(ctx);
-          if_block.c();
-          transition_in(if_block, 1);
-          if_block.m(if_block_anchor.parentNode, if_block_anchor);
-        }
-      } else if (if_block) {
-        group_outros();
-        transition_out(if_block, 1, 1, function () {
-          if_block = null;
-        });
-        check_outros();
-      }
-    },
-    i: function intro(local) {
-      if (current) return;
-      transition_in(postsgrid.$$.fragment, local);
-      transition_in(pagination.$$.fragment, local);
-      transition_in(if_block);
-      current = true;
-    },
-    o: function outro(local) {
-      transition_out(postsgrid.$$.fragment, local);
-      transition_out(pagination.$$.fragment, local);
-      transition_out(if_block);
-      current = false;
-    },
-    d: function destroy(detaching) {
-      if (detaching) detach_dev(t0);
-      destroy_component(postsgrid, detaching);
-      if (detaching) detach_dev(t1);
-      destroy_component(pagination, detaching);
-      if (detaching) detach_dev(t2);
-      if (if_block) if_block.d(detaching);
-      if (detaching) detach_dev(if_block_anchor);
-    }
-  };
-  dispatch_dev("SvelteRegisterBlock", {
-    block: block,
-    id: create_fragment$4.name,
-    type: "component",
-    source: "",
-    ctx: ctx
-  });
-  return block;
-}
-
-function instance$4($$self, $$props, $$invalidate) {
-  var $paginationStore;
-  validate_store(paginationStore, "paginationStore");
-  component_subscribe($$self, paginationStore, function ($$value) {
-    return $$invalidate(2, $paginationStore = $$value);
-  });
-  var isOnline;
-  var posts = [];
-  var isFetching = true;
-  onMount(function () {
-    isOnline = navigator.onLine;
-    $$invalidate(1, isFetching = true);
-    fetchData();
-  });
-
-  function fetchData() {
-    return _fetchData.apply(this, arguments);
-  }
-
-  function _fetchData() {
-    _fetchData = _asyncToGenerator( /*#__PURE__*/regenerator.mark(function _callee() {
-      var response, data, temp;
-      return regenerator.wrap(function _callee$(_context) {
-        while (1) {
-          switch (_context.prev = _context.next) {
-            case 0:
-              console.log(navigator.onLine);
-
-              if (!isOnline) {
-                _context.next = 10;
-                break;
-              }
-
-              _context.next = 4;
-              return fetch(isOnline ? "https://dev.to/api/articles?page=".concat($paginationStore) : "/data/posts.json");
-
-            case 4:
-              response = _context.sent;
-              _context.next = 7;
-              return response.json();
-
-            case 7:
-              data = _context.sent;
-              _context.next = 14;
-              break;
-
-            case 10:
-              temp = JSON.parse(localStorage.getItem("posts"));
-
-              if (temp.length) {
-                _context.next = 13;
-                break;
-              }
-
-              throw new Error("Error on local storage!");
-
-            case 13:
-              data = temp;
-
-            case 14:
-              localStorage.setItem("posts" + $paginationStore, JSON.stringify(data));
-              $$invalidate(0, posts = data.map(function (_d) {
-                return Post(_d.id, _d.title, _d.description, _d["tag_list"], _d["cover_image"]);
-              }));
-              $$invalidate(1, isFetching = false);
-
-            case 17:
-            case "end":
-              return _context.stop();
-          }
-        }
-      }, _callee);
-    }));
-    return _fetchData.apply(this, arguments);
-  }
-
-  function getPost(_x) {
-    return _getPost.apply(this, arguments);
-  }
-
-  function _getPost() {
-    _getPost = _asyncToGenerator( /*#__PURE__*/regenerator.mark(function _callee2(id) {
-      return regenerator.wrap(function _callee2$(_context2) {
-        while (1) {
-          switch (_context2.prev = _context2.next) {
-            case 0:
-              _context2.next = 2;
-              return goto("/articles/".concat(id));
-
-            case 2:
-            case "end":
-              return _context2.stop();
-          }
-        }
-      }, _callee2);
-    }));
-    return _getPost.apply(this, arguments);
-  }
-
-  function nextPage() {
-    paginationStore.nextPage();
-    $$invalidate(1, isFetching = true);
-    fetchData();
-  }
-
-  function prevPage() {
-    if ($paginationStore <= 0) return;
-    paginationStore.prevPage();
-    $$invalidate(1, isFetching = true);
-    fetchData();
-  }
-
-  var writable_props = [];
-  Object.keys($$props).forEach(function (key) {
-    if (!~writable_props.indexOf(key) && key.slice(0, 2) !== "$$") console_1.warn("<Routes> was created with unknown prop '".concat(key, "'"));
-  });
-  var _$$props$$$slots = $$props.$$slots,
-      $$slots = _$$props$$$slots === void 0 ? {} : _$$props$$$slots,
-      $$scope = $$props.$$scope;
-  validate_slots("Routes", $$slots, []);
-
-  var getpost_handler = function getpost_handler(e) {
-    return getPost(e.detail);
-  };
-
-  $$self.$capture_state = function () {
-    return {
-      onMount: onMount,
-      goto: goto,
-      paginationStore: paginationStore,
-      PostsGrid: PostsGrid,
-      Pagination: Pagination,
-      LoadingOverlay: LoadingOverlay,
-      Post: Post,
-      isOnline: isOnline,
-      posts: posts,
-      isFetching: isFetching,
-      fetchData: fetchData,
-      getPost: getPost,
-      nextPage: nextPage,
-      prevPage: prevPage,
-      $paginationStore: $paginationStore
-    };
-  };
-
-  $$self.$inject_state = function ($$props) {
-    if ("isOnline" in $$props) isOnline = $$props.isOnline;
-    if ("posts" in $$props) $$invalidate(0, posts = $$props.posts);
-    if ("isFetching" in $$props) $$invalidate(1, isFetching = $$props.isFetching);
-  };
-
-  if ($$props && "$$inject" in $$props) {
-    $$self.$inject_state($$props.$$inject);
-  }
-
-  return [posts, isFetching, $paginationStore, getPost, nextPage, prevPage, isOnline, fetchData, getpost_handler];
-}
-
-var Routes = /*#__PURE__*/function (_SvelteComponentDev) {
-  _inherits(Routes, _SvelteComponentDev);
-
-  var _super = _createSuper$4(Routes);
-
-  function Routes(options) {
-    var _this;
-
-    _classCallCheck(this, Routes);
-
-    _this = _super.call(this, options);
-    init(_assertThisInitialized(_this), options, instance$4, create_fragment$4, safe_not_equal, {});
-    dispatch_dev("SvelteRegisterComponent", {
-      component: _assertThisInitialized(_this),
-      tagName: "Routes",
-      options: options,
-      id: create_fragment$4.name
-    });
-    return _this;
-  }
-
-  return Routes;
-}(SvelteComponentDev);
-
-export default Routes;
+export { Button as B, PostsGrid as P, Pagination as a };

@@ -1,4 +1,4 @@
-import { _ as _inherits, a as _getPrototypeOf, b as _possibleConstructorReturn, c as _classCallCheck, i as init, s as safe_not_equal, d as _assertThisInitialized, e as dispatch_dev, f as _createClass, S as SvelteComponentDev, v as validate_each_argument, h as validate_slots, j as element, t as text, k as claim_element, q as children, r as claim_text, p as detach_dev, l as attr_dev, m as add_location, n as insert_dev, u as append_dev, w as set_data_dev, x as space, y as claim_space, z as _slicedToArray, A as noop, B as destroy_each, $ as _asyncToGenerator, a0 as regenerator, X as globals, D as create_component, Z as query_selector_all, E as claim_component, F as mount_component, G as transition_in, H as transition_out, I as destroy_component } from './client.a70cd07f.js';
+import { _ as _inherits, a as _getPrototypeOf, b as _possibleConstructorReturn, c as _classCallCheck, i as init, s as safe_not_equal, d as _assertThisInitialized, e as dispatch_dev, f as _createClass, S as SvelteComponentDev, v as validate_each_argument, g as validate_slots, h as element, t as text, j as claim_element, k as children, l as claim_text, m as detach_dev, n as attr_dev, o as add_location, p as insert_dev, q as append_dev, r as set_data_dev, u as space, w as claim_space, y as _slicedToArray, z as noop, A as destroy_each, T as _asyncToGenerator, U as regenerator, a0 as globals, H as create_component, P as query_selector_all, I as claim_component, J as mount_component, K as transition_in, M as transition_out, N as destroy_component } from './client.8bd9bda1.js';
 import { P as Post } from './Post.a5d586c7.js';
 
 function _createSuper(Derived) { var hasNativeReflectConstruct = _isNativeReflectConstruct(); return function () { var Super = _getPrototypeOf(Derived), result; if (hasNativeReflectConstruct) { var NewTarget = _getPrototypeOf(this).constructor; result = Reflect.construct(Super, arguments, NewTarget); } else { result = Super.apply(this, arguments); } return _possibleConstructorReturn(this, result); }; }
@@ -36,7 +36,7 @@ function create_each_block(ctx) {
     },
     h: function hydrate() {
       attr_dev(small, "class", "mx-4 my-2");
-      add_location(small, file, 23, 6, 740);
+      add_location(small, file, 23, 6, 750);
     },
     m: function mount(target, anchor) {
       insert_dev(target, small, anchor);
@@ -150,14 +150,14 @@ function create_fragment(ctx) {
       attr_dev(img, "alt",
       /*title*/
       ctx[0]);
-      add_location(img, file, 14, 2, 422);
+      add_location(img, file, 14, 2, 432);
       attr_dev(div, "class", "absolute top-0 left-0 w-full h-full bg-black opacity-50\r\n    pointer-events-none");
-      add_location(div, file, 18, 2, 549);
+      add_location(div, file, 18, 2, 559);
       attr_dev(span, "class", "relative flex flex-wrap justify-center");
-      add_location(span, file, 21, 2, 654);
-      attr_dev(h1, "class", "relative text-6xl font-bold");
-      add_location(h1, file, 26, 2, 806);
-      attr_dev(header, "class", "relative flex flex-col justify-center items-center mb-20 -mt-20 -mx-5\r\n  py-20 px-10 text-white text-center");
+      add_location(span, file, 21, 2, 664);
+      attr_dev(h1, "class", "relative text-4xl md:text-6xl font-bold");
+      add_location(h1, file, 26, 2, 816);
+      attr_dev(header, "class", "relative flex flex-col max-w-screen-xl justify-center items-center\r\n  mb-20 -mt-20 py-20 px-10 text-white text-center");
       add_location(header, file, 11, 0, 291);
     },
     m: function mount(target, anchor) {
@@ -428,7 +428,7 @@ function create_fragment$1(ctx) {
       attr_dev(link, "rel", "stylesheet");
       attr_dev(link, "href", "article.css");
       add_location(link, file$1, 63, 2, 1525);
-      attr_dev(section, "class", "wab-article px-20");
+      attr_dev(section, "class", "wab-article max-w-screen-xl px-6 md:px-20");
       add_location(section, file$1, 67, 0, 1652);
     },
     m: function mount(target, anchor) {
