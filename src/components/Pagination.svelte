@@ -3,6 +3,7 @@
   import Button from "./Button.svelte";
 
   export let pageCount = 1;
+  export let lastPage = false;
 
   const dispatch = createEventDispatcher();
 </script>
@@ -21,5 +22,10 @@
   <span class="w-auto border-none bg-primary-400 px-6 py-2 text-white text-lg">
     {pageCount}
   </span>
-  <Button on:click={() => dispatch('next')} className="mx-2">Proximo</Button>
+  <Button
+    disabled={lastPage}
+    on:click={() => !lastPage && dispatch('next')}
+    className="mx-2">
+    Proximo
+  </Button>
 </section>

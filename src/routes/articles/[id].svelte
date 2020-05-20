@@ -52,6 +52,11 @@
   import Hero from "../../components/article/Hero.svelte";
 
   export let post = Post();
+
+  function adjustContent(content) {
+    const adjusted = content.replace(/<a/g, '<a target="_blank" ');
+    return adjusted;
+  }
 </script>
 
 <style>
@@ -65,5 +70,5 @@
 
 <Hero title={post.title} tags={post.tags} cover={post.img} />
 <section class="wab-article max-w-screen-xl px-6 md:px-20">
-  {@html post.body}
+  {@html adjustContent(post.body)}
 </section>

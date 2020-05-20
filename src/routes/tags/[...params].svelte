@@ -1,18 +1,20 @@
 <script context="module">
-  export async function preload(page) {
-    const { number } = page.params;
+  export async function preload({ params }) {
+    const [tag, number] = params.params;
 
     function handleOffline() {
-      const posts = JSON.parse(localStorage.getItem("posts" + number));
+      const posts = JSON.parse(localStorage.getItem(tag + number));
       if (!posts.length) throw new Error("Error on local storage!");
       return posts;
     }
 
     async function handleOnline() {
       let data;
-      const res = await fetch(`https://dev.to/api/articles?page=${number}`);
+      const res = await fetch(
+        `https://dev.to/api/articles?tag=${tag}?&page=${number}`
+      );
       data = await res.json();
-      localStorage.setItem("posts" + number, JSON.stringify(data));
+      localStorage.setItem(tag + number, JSON.stringify(data));
       return data;
     }
 
@@ -32,7 +34,7 @@
       Post(_d.id, _d.title, _d.description, _d["tag_list"], _d["cover_image"])
     );
 
-    return { posts, number };
+    return { posts, number, tag };
   }
 </script>
 
@@ -48,6 +50,7 @@
 
   export let posts;
   export let number;
+  export let tag;
 
   const lastPage = posts.length < 30;
   let isOnline;
@@ -62,23 +65,21 @@
   }
 
   async function nextPage() {
-    // paginationStore.nextPage();
     isFetching = true;
-    await goto(`/page/${++number}`);
+    await goto(`/tags/${tag}/${++number}`);
     isFetching = false;
   }
 
   async function prevPage() {
     if (number <= 0) return;
-    // paginationStore.prevPage();
     isFetching = true;
-    await goto(`/page/${--number}`);
+    await goto(`/tags/${tag}/${--number}`);
     isFetching = false;
   }
 </script>
 
 <svelte:head>
-  <title>{`WAB - artigos página ${number}`}</title>
+  <title>{`WAB - tag ${tag} / ${number}`}</title>
 </svelte:head>
 
 <Pagination

@@ -11,5 +11,8 @@ this is a blog were yo ca read the dev.to article even if you are offline.
 [x] add hash on tags.
 [x] add the side up menu.
 [-] add the logo to the page.
-[] add search by tag.
+[x] add search by tag.
 [] create the about page.
+[] settings screen.
+[] auto offline.
+[] create a search bar.

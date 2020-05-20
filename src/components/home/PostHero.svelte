@@ -1,12 +1,9 @@
 <script>
+  import { goto } from "@sapper/app";
   import Post from "../../models/Post";
 
   export let post = Post();
 </script>
-
-<style>
-
-</style>
 
 <header
   on:click
@@ -21,7 +18,12 @@
     pointer-events-none" />
   <span class="relative flex flex-wrap justify-center">
     {#each post.tags as tag}
-      <small class="mx-4 my-2">{tag}</small>
+      <p
+        on:click|stopPropagation={async () => await goto(`/tags/${tag}/1`)}
+        class="font-semibold text-white my-1 mx-2 hover:cursor-pointer
+        hover:text-primary-100">
+        #{tag}
+      </p>
     {/each}
   </span>
   <h1 class="relative text-4xl md:text-6xl font-bold">{post.title}</h1>

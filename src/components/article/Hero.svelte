@@ -1,4 +1,6 @@
 <script>
+  import { goto } from "@sapper/app";
+
   export let title;
   export let cover;
   export let tags;
@@ -20,7 +22,12 @@
     pointer-events-none" />
   <span class="relative flex flex-wrap justify-center">
     {#each tags as tag}
-      <small class="mx-4 my-2">{tag}</small>
+      <p
+        on:click|stopPropagation={async () => await goto(`/tags/${tag}/1`)}
+        class="font-semibold text-white my-1 mx-2 hover:cursor-pointer
+        hover:text-primary-100">
+        #{tag}
+      </p>
     {/each}
   </span>
   <h1 class="relative text-4xl md:text-6xl font-bold">{title}</h1>
