@@ -1,4 +1,6 @@
 <script>
+  import TagsBox from "./TagsBox.svelte";
+  import SearchBar from "./SearchBar.svelte";
   import { createEventDispatcher } from "svelte";
   import { fade, fly } from "svelte/transition";
   import { circInOut } from "svelte/easing";
@@ -18,6 +20,8 @@
   transition:fly={{ duration: 500, y: window.innerHeight, easing: circInOut }}
   class="fixed z-50 flex flex-col justify-center bottom-0 w-full h-auto
   bg-primary-500 p-4 ">
+  <TagsBox on:close={() => dispatch('close')} />
+  <SearchBar on:close={() => dispatch('close')} />
   <ul class="w-full flex flex-col items-center text-primary-100">
     {#each links as { name, href }}
       <li

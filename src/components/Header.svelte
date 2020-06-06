@@ -1,4 +1,5 @@
 <script>
+	import SearchBar from './SearchBar.svelte';
   import { createEventDispatcher } from "svelte";
   import { stores, goto } from "@sapper/app";
   import Logo from "./Logo.svelte";
@@ -38,6 +39,7 @@
         </li>
       {/each}
     </ul>
+    <SearchBar dispatchClose={false} className="hidden ml-auto text-black md:flex" />
     <MenuIcon
       isOpen={showMenu}
       on:click={() => dispatch('showmenu')}

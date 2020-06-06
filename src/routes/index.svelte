@@ -1,4 +1,5 @@
-<script>
+<script>import TagsBox from "../components/TagsBox.svelte";
+
   import { onMount } from "svelte";
   import { goto } from "@sapper/app";
   import PostHero from "../components/home/PostHero.svelte";
@@ -55,6 +56,7 @@
 </svelte:head>
 
 <PostHero on:click={e => getPost(posts[0].id)} post={posts[0]} />
+<TagsBox dispatchClose={false} />
 <PostsGrid posts={posts.slice(1)} on:getpost={e => getPost(e.detail)} />
 <Button on:click={() => goto('/page/1')} className="items-center mt-4 mx-auto">
   Ver mais

@@ -8,7 +8,7 @@
 <header
   on:click
   class="relative cursor-pointer flex max-w-screen-xl flex-col justify-center
-  items-center mb-20 -mt-20 py-20 px-10 text-white text-center">
+  items-center mb-8 -mt-20 py-20 px-10 text-white text-center">
   <img
     class="absolute top-0 left-0 w-full h-full object-cover pointer-events-none"
     src={post.img}

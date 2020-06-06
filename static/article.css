@@ -1,3 +1,7 @@
+.wab-article {
+    word-break: break-all;
+}
+
 /* paragraph*/
 .wab-article>p {
     font-size: 1.25rem;
